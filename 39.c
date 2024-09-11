@@ -10,6 +10,10 @@ int main()
         for(int i = 1 ; i <= j ; i++)
             factorial*=i;
         sum += (j/factorial);
+        if(j!=m)
+            printf("%d/%d! + ",j,j);
+        else
+            printf("%d/%d! = ",j,j);
     }
     printf("%d",sum);
     return 0;
